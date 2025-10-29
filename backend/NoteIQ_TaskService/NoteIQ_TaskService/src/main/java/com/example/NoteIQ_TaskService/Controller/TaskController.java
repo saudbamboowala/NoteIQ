@@ -1,0 +1,154 @@
+package com.example.NoteIQ_TaskService.Controller;
+
+import com.example.NoteIQ_TaskService.Domain.Task;
+import com.example.NoteIQ_TaskService.Exception.TaskNotFoundException;
+import com.example.NoteIQ_TaskService.Service.TaskService;
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/v1")
+public class TaskController {
+    private final TaskService taskService;
+
+    @Autowired
+    public TaskController(TaskService taskService) {
+        this.taskService = taskService;
+    }
+
+    // Helper method to validate userId from request
+    private String validateAndGetUserId(HttpServletRequest request) {
+        String userId = (String) request.getAttribute("userId");
+
+        // Fallback to header (primary method from API Gateway)
+        if (userId == null || userId.isBlank()) {
+            userId = request.getHeader("X-User-Id");
+        }
+
+        return (userId == null || userId.isBlank()) ? null : userId;
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity<?> insertTask(@RequestBody Task task, HttpServletRequest request) {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+        task.setUserId(userId);
+        Task savedTask = taskService.saveTask(task);
+        return new ResponseEntity<>(savedTask, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/fetch")
+    public ResponseEntity<?> fetchAllTasks(HttpServletRequest request) throws TaskNotFoundException {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+        List<Task> taskList = taskService.fetchTaskByUserId(userId);
+        return new ResponseEntity<>(taskList, HttpStatus.OK);
+    }
+
+
+    @GetMapping("/category/{taskCategory}")
+    public ResponseEntity<?> fetchByCategory(@PathVariable String taskCategory, HttpServletRequest request) {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+
+        List<Task> tasks = taskService.fetchByCategory(taskCategory);
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
+    }
+
+    @GetMapping("/status/{taskStatus}")
+    public ResponseEntity<?> fetchByStatus(@PathVariable String taskStatus, HttpServletRequest request) {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+
+        List<Task> tasks = taskService.fetchByStatus(taskStatus);
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
+    }
+
+    @GetMapping("/due/{taskDueDate}")
+    public ResponseEntity<?> fetchByDueDate(@PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate taskDueDate, HttpServletRequest request) {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+
+        List<Task> tasks = taskService.fetchByDueDate(taskDueDate);
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/delete/{taskId}")
+    public ResponseEntity<?> deleteTask(@PathVariable String taskId, HttpServletRequest request) throws TaskNotFoundException {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+
+        taskService.deleteTask(taskId);
+        return new ResponseEntity<>("Task deleted with ID: " + taskId, HttpStatus.OK);
+    }
+
+    @GetMapping("/status/archived")
+    public ResponseEntity<?> fetchArchivedTasks(HttpServletRequest request) {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+
+        List<Task> archivedTasks = taskService.fetchArchivedTasks(userId);
+        return new ResponseEntity<>(archivedTasks, HttpStatus.OK);
+    }
+
+    @PatchMapping("/update/{taskId}")
+    public ResponseEntity<?> updateTask(@PathVariable String taskId,
+                                        @RequestBody Task task,
+                                        HttpServletRequest request) throws TaskNotFoundException {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized: User ID not found");
+        }
+
+        // Fetch the existing task
+        Task existingTask = taskService.getTaskById(taskId);
+        if (existingTask == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Task not found with ID: " + taskId);
+        }
+
+        // Check task ownership
+        if (!existingTask.getUserId().equals(userId)) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Forbidden: You are not allowed to update this task");
+        }
+
+        // Ensure the updated task has the same ID and userId
+        task.setTaskId(taskId);
+        task.setUserId(userId);
+
+        Task updatedTask = taskService.updateTask(task);
+        return ResponseEntity.ok(updatedTask);
+    }
+
+
+    @PatchMapping("/archive/{taskId}")
+    public ResponseEntity<?> archiveTask(@PathVariable String taskId, HttpServletRequest request) throws TaskNotFoundException {
+        String userId = validateAndGetUserId(request);
+        if (userId == null) {
+            return new ResponseEntity<>("Unauthorized: User ID not found", HttpStatus.UNAUTHORIZED);
+        }
+
+        Task archivedTask = taskService.archiveTask(taskId);
+        return new ResponseEntity<>(archivedTask, HttpStatus.OK);
+    }
+}

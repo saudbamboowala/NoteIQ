@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/backend/NoteIQ_AuthService/NoteIQ_AuthService/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/NoteIQ_TaskService/NoteIQ_TaskService/pom.xml" />
       </list>
     </option>
   </component>
