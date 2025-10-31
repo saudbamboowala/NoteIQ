@@ -1,0 +1,107 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ecd782d9-36b7-41cb-8db7-77d9223ae1ad\" name=\"Changes\" comment=\"Task service Setup Completed by Saud Bamboowala\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Exception\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;saudbamboowala&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/saudbamboowala/NoteIQ.git&quot;,\r\n    &quot;accountId&quot;: &quot;aded4e8f-0a72-4982-babf-8a55b0acf0ec&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"34gN11L9DKhLTShrjXzQ3iZz18S\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.NoteIqAuthServiceApplication.executor\": \"Run\",\r\n    \"Application.NoteIqTaskServiceApplication.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/hardi/OneDrive/Desktop/Saud Temp/NoteIQ/NoteIQ\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"inlay.hints\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Application.NoteIqAuthServiceApplication\">\r\n    <configuration name=\"NoteIqAuthServiceApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.NoteIQ_AuthService.NoteIqAuthServiceApplication\" />\r\n      <module name=\"NoteIQ_AuthService\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.example.NoteIQ_AuthService.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"NoteIqTaskServiceApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.NoteIQ_TaskService.NoteIqTaskServiceApplication\" />\r\n      <module name=\"NoteIQ_TaskService\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.example.NoteIQ_TaskService.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.NoteIqAuthServiceApplication\" />\r\n        <item itemvalue=\"Application.NoteIqTaskServiceApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ecd782d9-36b7-41cb-8db7-77d9223ae1ad\" name=\"Changes\" comment=\"\" />\r\n      <created>1761631036921</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1761631036921</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Auth service Setup Completed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1761719214477</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1761719214477</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Auth service Setup Completed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1761719266916</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1761719266916</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Auth service Setup Completed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1761719319429</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1761719319429</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Task service Setup Completed by Saud Bamboowala\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1761732786648</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1761732786648</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Auth service Setup Completed\" />\r\n    <MESSAGE value=\"Task service Setup Completed by Saud Bamboowala\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Task service Setup Completed by Saud Bamboowala\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-field\">\r\n          <url>file://$PROJECT_DIR$/backend/NoteIQ_AuthService/NoteIQ_AuthService/src/main/java/com/example/NoteIQ_AuthService/Service/AuthServiceImpl.java</url>\r\n          <line>16</line>\r\n          <properties field=\"userRepository\" class=\"com.example.NoteIQ_AuthService.Service.AuthServiceImpl\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2a82c915fe085df7f8b5d6317c0a85953d72e77a)
++++ b/.idea/workspace.xml	(date 1761887035540)
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ecd782d9-36b7-41cb-8db7-77d9223ae1ad" name="Changes" comment="Task service Setup Completed by Saud Bamboowala" />
++    <list default="true" id="ecd782d9-36b7-41cb-8db7-77d9223ae1ad" name="Changes" comment="Task service Setup Completed by Saud Bamboowala">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -52,10 +54,11 @@
+   "keyToString": {
+     "Application.NoteIqAuthServiceApplication.executor": "Run",
+     "Application.NoteIqTaskServiceApplication.executor": "Run",
++    "ModuleVcsDetector.initialDetectionPerformed": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "main",
++    "git-widget-placeholder": "frontend1",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "C:/Users/hardi/OneDrive/Desktop/Saud Temp/NoteIQ/NoteIQ",
+     "project.structure.last.edited": "Project",
+@@ -147,16 +150,4 @@
+     <MESSAGE value="Task service Setup Completed by Saud Bamboowala" />
+     <option name="LAST_COMMIT_MESSAGE" value="Task service Setup Completed by Saud Bamboowala" />
+   </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-field">
+-          <url>file://$PROJECT_DIR$/backend/NoteIQ_AuthService/NoteIQ_AuthService/src/main/java/com/example/NoteIQ_AuthService/Service/AuthServiceImpl.java</url>
+-          <line>16</line>
+-          <properties field="userRepository" class="com.example.NoteIQ_AuthService.Service.AuthServiceImpl" />
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+ </project>
+\ No newline at end of file
+Index: frontend/noteIq/src/App.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { useState } from 'react'\r\nimport reactLogo from './assets/react.svg'\r\nimport viteLogo from '/vite.svg'\r\nimport './App.css'\r\n\r\nfunction App() {\r\n  const [count, setCount] = useState(0)\r\n\r\n  return (\r\n    <>\r\n      <div>\r\n        <a href=\"https://vite.dev\" target=\"_blank\">\r\n          <img src={viteLogo} className=\"logo\" alt=\"Vite logo\" />\r\n        </a>\r\n        <a href=\"https://react.dev\" target=\"_blank\">\r\n          <img src={reactLogo} className=\"logo react\" alt=\"React logo\" />\r\n        </a>\r\n      </div>\r\n      <h1>Vite + React</h1>\r\n      <div className=\"card\">\r\n        <button onClick={() => setCount((count) => count + 1)}>\r\n          count is {count}\r\n        </button>\r\n        <p>\r\n          Edit <code>src/App.jsx</code> and save to test HMR\r\n        </p>\r\n      </div>\r\n      <p className=\"read-the-docs\">\r\n        Click on the Vite and React logos to learn more\r\n      </p>\r\n    </>\r\n  )\r\n}\r\n\r\nexport default App\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/noteIq/src/App.jsx b/frontend/noteIq/src/App.jsx
+--- a/frontend/noteIq/src/App.jsx	(revision 2a82c915fe085df7f8b5d6317c0a85953d72e77a)
++++ b/frontend/noteIq/src/App.jsx	(date 1761887777860)
+@@ -1,35 +1,13 @@
+-import { useState } from 'react'
+-import reactLogo from './assets/react.svg'
+-import viteLogo from '/vite.svg'
+-import './App.css'
++import { useState } from 'react';
++import { BrowserRouter as Router } from 'react-router-dom';
++import AppRoutes from './routes/AppRoutes.jsx';
+ 
+ function App() {
+-  const [count, setCount] = useState(0)
+-
+   return (
+-    <>
+-      <div>
+-        <a href="https://vite.dev" target="_blank">
+-          <img src={viteLogo} className="logo" alt="Vite logo" />
+-        </a>
+-        <a href="https://react.dev" target="_blank">
+-          <img src={reactLogo} className="logo react" alt="React logo" />
+-        </a>
+-      </div>
+-      <h1>Vite + React</h1>
+-      <div className="card">
+-        <button onClick={() => setCount((count) => count + 1)}>
+-          count is {count}
+-        </button>
+-        <p>
+-          Edit <code>src/App.jsx</code> and save to test HMR
+-        </p>
+-      </div>
+-      <p className="read-the-docs">
+-        Click on the Vite and React logos to learn more
+-      </p>
+-    </>
+-  )
++    <Router>
++      <AppRoutes />
++    </Router>
++  );
+ }
+ 
+-export default App
++export default App;
+\ No newline at end of file
